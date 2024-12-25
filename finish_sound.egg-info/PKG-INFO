@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: finish-sound
+Version: 0.1.1
+Summary: A simple package that plays a sound when code finishes running
+Home-page: https://github.com/kentjliu/finish-sound
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# finish-sound
+
+`finish-sound` is a simple, silly Python package that plays a sound when your code finishes executing.
+
+## Installation
+
+You can install the package via `pip`:
+```
+pip install finish-sound
+```
+

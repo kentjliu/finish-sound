@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+finish_sound/__init__.py
+finish_sound.egg-info/PKG-INFO
+finish_sound.egg-info/SOURCES.txt
+finish_sound.egg-info/dependency_links.txt
+finish_sound.egg-info/requires.txt
+finish_sound.egg-info/top_level.txt
+finish_sound/sounds/aussie-finish-sound.mp3
+finish_sound/sounds/british-finish-sound.mp3
+finish_sound/sounds/deep-finish-sound.mp3
+finish_sound/sounds/prabhat-finish-sound.mp3

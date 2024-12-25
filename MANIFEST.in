@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+recursive-include finish_sound/sounds *.mp3

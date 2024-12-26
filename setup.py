@@ -2,17 +2,20 @@ from setuptools import setup, find_packages
 
 setup(
     name="finish-sound",
-    version="0.1.2",
+    version="0.1.3",
     packages=find_packages(),
     install_requires=[ 
-        "playsound>=1.2.2",
+        "playsound>=1.2.2", 
+        "pygame>=2.0.1",     
+        "pydub>=0.25.1",     
+        "IPython>=7.0",      
     ],
     description="A simple package that plays a sound when code finishes running",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Your Name",
     author_email="your.email@example.com",
-    url="https://github.com/kentjliu/finish-sound",  # Replace with your GitHub link
+    url="https://github.com/kentjliu/finish-sound",  
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

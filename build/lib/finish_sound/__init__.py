@@ -1,10 +1,10 @@
 import random
 import pkg_resources
-from playsound import playsound
+import pygame
 
 def play_finish_sound():
     """
-    Plays a random finish sound from the package's resources.
+    Plays a random finish sound from the package's resources using pygame.
     """
     # List all files in the 'sounds' directory
     sound_files = pkg_resources.resource_listdir("finish_sound", "sounds")
@@ -20,5 +20,14 @@ def play_finish_sound():
         "finish_sound", f"sounds/{random_sound}"
     )
     
-    # print(f"Code finished. Playing sound: {random_sound}")
-    playsound(sound_file)
+    # Initialize pygame mixer
+    pygame.mixer.init()
+    
+    # Load the sound and play it
+    pygame.mixer.music.load(sound_file)
+    pygame.mixer.music.play()
+    
+    # Keep the program running until the sound is finished playing
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)  # Check every 100ms
+

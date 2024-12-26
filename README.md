@@ -3,6 +3,10 @@
 `finish-sound` is a simple, silly Python package that plays a sound when your code finishes executing. 
 Specifically, it will be one of four random voices saying `"Your code is finished running!"`
 
+## Demo
+For your convenience, we have provided a Google Colab Notebook with which you can use to follow along:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kentjliu/sparseqjl/blob/main/finish_sound_demo.ipynb)
+
 ## Installation
 
 You can install the package via `pip`:

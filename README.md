@@ -5,7 +5,7 @@ Specifically, it will be one of four random voices saying `"Your code is finishe
 
 ## Demo
 For your convenience, we have provided a Google Colab Notebook with which you can use to follow along:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kentjliu/sparseqjl/blob/main/finish_sound_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kentjliu/finish-sound/blob/main/finish_sound_demo.ipynb)
 
 ## Installation
 

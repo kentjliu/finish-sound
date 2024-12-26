@@ -1,11 +1,13 @@
 import random
 import pkg_resources
-from IPython.display import Audio, display  # Ensure display is imported
+from IPython.display import Audio, display, Javascript
 from playsound import playsound
+
 
 def play_finish_sound_notebook():
     """
-    Plays a random finish sound from the package's resources using browser-based audio in Colab.
+    Plays a random finish sound from the package's resources using IPython.display.Audio in Colab.
+    Automatically plays the sound using JavaScript.
     """
     # List all files in the 'sounds' directory
     sound_files = pkg_resources.resource_listdir("finish_sound", "sounds")
@@ -21,8 +23,13 @@ def play_finish_sound_notebook():
         "finish_sound", f"sounds/{random_sound}"
     )
     
-    # Use IPython display to play the sound in the notebook
-    display(Audio(sound_file))
+    # Create the audio object
+    audio = Audio(sound_file)
+    
+    # Display the audio player and play it automatically using JavaScript
+    display(audio)
+    display(Javascript('document.querySelector("audio").play()'))  # Use JS to trigger auto-play
+
 
 
 def play_finish_sound():

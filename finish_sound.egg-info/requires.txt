@@ -1,1 +1,4 @@
 playsound>=1.2.2
+pygame>=2.0.1
+pydub>=0.25.1
+IPython>=7.0

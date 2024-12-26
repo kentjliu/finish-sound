@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: finish-sound
-Version: 0.1.2
+Version: 0.1.4
 Summary: A simple package that plays a sound when code finishes running
 Home-page: https://github.com/kentjliu/finish-sound
 Author: Your Name
@@ -12,6 +12,9 @@ Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: playsound>=1.2.2
+Requires-Dist: pygame>=2.0.1
+Requires-Dist: pydub>=0.25.1
+Requires-Dist: IPython>=7.0
 
 # finish-sound
 

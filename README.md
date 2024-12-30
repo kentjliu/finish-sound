@@ -1,6 +1,6 @@
 # finish-sound
 
-**Current Release**: 0.2.0
+**Current Release**: 0.2.1
 
 `finish-sound` is a simple, silly Python package that plays a sound when your code finishes executing. 
 By defualt, it will be one of four random voices saying `"Your code is finished running!"`

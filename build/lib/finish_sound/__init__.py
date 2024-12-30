@@ -13,7 +13,7 @@ class CustomSound:
         self._text = text
         self.output_dir = output_dir
         self.filename = filename
-        self.accent = accent  # Default accent is set to 'com.au'
+        self._accent = accent  # Default accent is set to 'com.au'
         self.audio_file = os.path.join(self.output_dir, self.filename)
         self._generate_tts()  # Generate audio upon initialization
 
@@ -39,8 +39,9 @@ class CustomSound:
         """
         Generates a TTS audio file for the text and saves it to the specified location.
         """
-        tts = gTTS(self._text, tld=self.accent)
+        tts = gTTS(self._text, tld=self._accent)
         tts.save(self.audio_file)
+
 
 
 def play_custom_sound(sound_obj):

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: finish-sound
-Version: 0.2.0
+Version: 0.2.1
 Summary: A simple package that plays a sound when code finishes running
 Home-page: https://github.com/kentjliu/finish-sound
 Author: Kent Liu

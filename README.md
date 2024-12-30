@@ -1,9 +1,9 @@
 # finish-sound
 
-**Current Release**: 0.1.4
+**Current Release**: 0.2.0
 
 `finish-sound` is a simple, silly Python package that plays a sound when your code finishes executing. 
-Specifically, it will be one of four random voices saying `"Your code is finished running!"`
+By defualt, it will be one of four random voices saying `"Your code is finished running!"`
 
 ## Demo
 For your convenience, we have provided a Google Colab Notebook with which you can use to follow along:
@@ -29,6 +29,40 @@ from finish_sound import play_finish_sound_notebook
 play_finish_sound_notebook()
 ```
 
+### Custom Sounds
+You can now create your custom sound to play when your code finishes running using our `CustomSound` class and `play_custom_sound` method (built on top of Google's `gtts` package).
+
+```
+from finish_sound import *
+
+sound = CustomSound()
+sound.text = 'This is my custom sound!`
+
+// some long task (eg. scraping websites)
+
+play_custom_sound(sound)
+```
+
+You can also set the local accent of the voice. By default, it is an Australian accent.
+
+```
+sound.accent = 'co.za' # South African accent
+```
+
+Refer to the table below for options.
+
+| Local Accent                 | Param                                    |
+|-------------------------|-------------------------------------------------|
+| English (Australia)    | `com.au`          |
+| English (United Kingdom)       | `co.uk` |
+| English (United States)    | `us`       |
+| English (Canada)  | `ca` |
+| English (India)     | `co.in`             |
+| English (Ireland)      | `ie`          |
+| English (South Africa)     | `co.za`               |
+| English (Nigeria)      | `com.ng`   |
+
+
 ## Local machine
 
 Example usage
@@ -45,5 +79,4 @@ play_finish_sound()
 ## Looking forward
 
 * Plan to add more voices/sounds
-* Add option to pick specific voice/sound from a set menu by passing in a string argument
 * Tweak the sound: pitch, volume, etc.

@@ -9,10 +9,11 @@ class CustomSound:
     A class to represent a custom sound that can be generated using text-to-speech.
     Automatically generates the audio file when text is set.
     """
-    def __init__(self, text="Your code is finished running", output_dir=".", filename="custom_sound.mp3"):
+    def __init__(self, text="Your code is finished running", output_dir=".", filename="custom_sound.mp3", accent="com.au"):
         self._text = text
         self.output_dir = output_dir
         self.filename = filename
+        self.accent = accent  # Default accent is set to 'com.au'
         self.audio_file = os.path.join(self.output_dir, self.filename)
         self._generate_tts()  # Generate audio upon initialization
 
@@ -25,11 +26,20 @@ class CustomSound:
         self._text = new_text
         self._generate_tts()  # Regenerate audio when text is updated
 
+    @property
+    def accent(self):
+        return self._accent
+
+    @accent.setter
+    def accent(self, new_accent):
+        self._accent = new_accent
+        self._generate_tts()  # Regenerate audio when accent is updated
+
     def _generate_tts(self):
         """
         Generates a TTS audio file for the text and saves it to the specified location.
         """
-        tts = gTTS(self._text, tld='com.ng')
+        tts = gTTS(self._text, tld=self.accent)
         tts.save(self.audio_file)
 
 

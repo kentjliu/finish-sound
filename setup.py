@@ -2,13 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name="finish-sound",
-    version="0.1.5",
+    version="0.2.0",
     packages=find_packages(),
     install_requires=[ 
         "playsound>=1.2.2", 
         "pygame>=2.0.1",     
         "pydub>=0.25.1",     
-        "IPython>=7.0",      
+        "IPython>=7.0",  
+        "gTTS>=2.2.4"    
     ],
     description="A simple package that plays a sound when code finishes running",
     long_description=open("README.md").read(),

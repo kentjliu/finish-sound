@@ -13,8 +13,8 @@ setup(
     description="A simple package that plays a sound when code finishes running",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Kent Liu",
+    author_email="kent.liu@columbia.edu",
     url="https://github.com/kentjliu/finish-sound",  
     classifiers=[
         "Programming Language :: Python :: 3",
